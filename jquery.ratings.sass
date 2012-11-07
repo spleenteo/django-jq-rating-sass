@@ -1,0 +1,45 @@
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/
+// this is a friendly SCSS/SASS version
+// to personalize the jquery django ratings plugins
+// author: Matteo Papadopoulos aka @spleenteo
+// info@cantierecreativo.net - http://www.cantierecreativo.net
+
+.star-rating-control
+  // config for your design
+  // **************************************
+  $delete_img: "ratings/delete.png"
+  $star_img: "ratings/star.png"
+  $icon_width: 17px
+  $icon_height: 16px
+  // **************************************
+  // this shoul be enough! bye!!! :)
+  .rating-cancel, .star-rating
+    float: left
+    width: $icon_width
+    height: $icon_height
+    text-indent: -999em
+    cursor: pointer
+    display: block
+    background: transparent
+    overflow: hidden
+    a
+      display: block
+      width: $icon_width - 1px
+      height: 100%
+      background-position: 0 0px
+      border: 0
+  .rating-cancel
+    a
+      background: url($delete_img) no-repeat 0 $icon_height * -1
+  .star-rating
+    a
+      background: url($star_img) no-repeat 0 0
+    &.star-rating-on
+      a
+        background-position: 0 $icon_height * -1
+    &.star-rating-readonly
+      a
+        cursor: default
+    &.star-rating-hover
+      a
+        background-position: 0px $icon_height * 2 * -1

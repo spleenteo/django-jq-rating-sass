@@ -1,11 +1,11 @@
 django jquery rating plugin in sass/scss
 =====================
 
-the sass/scss version of jquery django rating plugin.
+the sass and scss version of jquery django rating plugin.
 
 http://www.fyneworks.com/jquery/star-rating/
 
-I did used this plugin a few times. It's great! but to personalize it and to integrate it in a modular css framework could be so easy.
+I did used this plugin a few times. It's great! but to personalize it and to integrate it in a modular css framework could be not so easy.
 
 I do love scss so I wrote a version to style this plugin with some configuration variables to make it more friendly to change the ratings desing.
 

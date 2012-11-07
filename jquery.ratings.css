@@ -1,7 +1,8 @@
 /* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
 .star-rating-control .rating-cancel, .star-rating-control .star-rating { float: left; width: 17px; height: 16px; text-indent: -999em; cursor: pointer; display: block; background: transparent; overflow: hidden; }
-.star-rating-control .rating-cancel a, .star-rating-control .star-rating a { display: block; width: 16px; height: 100%; background-position: 0 0px; border: 0; }
-.star-rating-control .rating-cancel a { background: url("ratings/delete.png") no-repeat 0 -16px; }
+.star-rating-control .rating-cancel a, .star-rating-control .star-rating a { display: block; width: 17px; height: 100%; background-position: 0 0px; border: 0; }
+.star-rating-control .rating-cancel a { opacity: 0.5; background: url("ratings/delete.png") no-repeat 0 0; }
+.star-rating-control .rating-cancel a:hover { opacity: 1; }
 .star-rating-control .star-rating a { background: url("ratings/star.png") no-repeat 0 0; }
 .star-rating-control .star-rating.star-rating-on a { background-position: 0 -16px; }
 .star-rating-control .star-rating.star-rating-readonly a { cursor: default; }

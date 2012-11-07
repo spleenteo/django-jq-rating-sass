@@ -11,6 +11,7 @@
   $star_img: "ratings/star.png"
   $icon_width: 17px
   $icon_height: 16px
+  $delete_initial_opacity: 0.5
   // **************************************
   // this shoul be enough! bye!!! :)
   .rating-cancel, .star-rating
@@ -24,13 +25,16 @@
     overflow: hidden
     a
       display: block
-      width: $icon_width - 1px
+      width: $icon_width
       height: 100%
       background-position: 0 0px
       border: 0
   .rating-cancel
     a
-      background: url($delete_img) no-repeat 0 $icon_height * -1
+      opacity: $delete_initial_opacity
+      background: url($delete_img) no-repeat 0 0
+      &:hover
+        opacity: 1
   .star-rating
     a
       background: url($star_img) no-repeat 0 0
